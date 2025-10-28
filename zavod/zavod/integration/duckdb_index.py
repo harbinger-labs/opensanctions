@@ -7,7 +7,7 @@
 #            -v .:/opensanctions \
 #            --memory 3G
 #            -e ZAVOD_DATA_PATH=/data
-#            -e ZAVOD_DATABASE_URI=postgresql://postgres:password@host.docker.internal:5432/dev
+#            -e ZAVOD_DATABASE_URI=postgresql://postgres:password@host.docker.internal:5444/dev  # Changed from 5432 to 5444 to avoid port conflicts
 #            opensanctions bash
 #
 # Debugging memory usage?
