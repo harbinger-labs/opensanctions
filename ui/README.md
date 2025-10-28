@@ -29,7 +29,8 @@ docker compose -f ../docker-compose.yml up -d db # Bring up a dev database
 Set environment variables, e.g. via .env.local file
 
 ```
-ZAVOD_DATABASE_URI=postgresql://postgres:password@localhost:5432/dev
+# Changed from 5432 to 5444 to avoid port conflicts
+ZAVOD_DATABASE_URI=postgresql://postgres:password@localhost:5444/dev
 ZAVOD_ALLOW_UNAUTHENTICATED=true  # Unsafe if an untrusted network can reach this
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
